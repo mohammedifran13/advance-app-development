@@ -1,0 +1,17 @@
+.footer {
+    background-color: #48d6f6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 12000px;
+    /* margin: 0 auto; */
+  }
+  
+  .copyright {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  

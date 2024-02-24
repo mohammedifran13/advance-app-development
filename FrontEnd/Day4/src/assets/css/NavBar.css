@@ -1,0 +1,193 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #48d6f6;
+}
+
+.sidebar-togglenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.sidebarnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 20;
+  background-color: #ffffff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebarnav.open {
+  transform: translateX(0%);
+}
+
+.close-sidebarnav {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  background-color: transparent;
+  border: none;
+}
+
+.sidebar-contentnav {
+  padding: 16px;
+  margin-top: -10px;
+}
+
+.sidebariconsnav:hover,
+.sidebariconsnav p:hover {
+  color: rgb(5, 2, 1);
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.sidebariconsnav h3,
+.sidebariconsnav p {
+  display: inline; /* Make the icon and letters appear in the same line */
+  margin-right: 5px; /* Adjust this value for spacing between icon and letters */
+}
+
+
+
+.sidebar-content h1 {
+  color: white;
+}
+
+.sidebar-contentnav p,
+.sidebar-contentnav a {
+  display: block;
+  color: #333333;
+  padding: 8px 5px;
+  text-decoration: none;
+  margin-top: 3px; /* Adjust this value to reduce the space */
+  font-size: 1.1rem;
+  transition: color 0.3s; /* Add transition for a smooth color change */
+}
+
+.sidebar-contentnav p:hover,
+.sidebar-contentnav a:hover {
+  color: #00FF37; /* Change this to your desired green color */
+}
+
+
+.navbar-logonav {
+  margin-right: auto;
+  margin-left: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 12px;
+}
+
+.nav-itemsnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.nav-itemsnav li {
+  margin-right: 60px;
+  margin-bottom: 5px;
+}
+
+.nav-itemsnav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-itemsnav a:hover {
+  color:#000000;
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.logging-barnav {
+  margin-left: 80px;
+  margin-top: -18px;
+}
+
+@media (max-width: 768px) {
+  .nav-itemsnav {
+    display: none;
+  }
+
+  .sidebar-togglenav {
+    position: relative;
+    z-index: 20;
+  }
+
+  .sidebar-togglenav .fa-bars {
+    color: #ffffff;
+    font-size: 24px;
+  }
+}
+
+.profile-dropdownnav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profile-triggernav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.profile-dropdown-contentnav {
+  position: absolute;
+  top: calc(100% + 30px);
+  left: 25%;
+  transform: translateX(-50%);
+  min-width: 120px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-dropdown-contentnav div {
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-dropdown-contentnav a {
+  color: #333333;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.profile-dropdown-contentnav a:hover {
+  color:#63cd61;
+  text-decoration: underline; /* Add underline on hover */
+}
